@@ -1,3 +1,11 @@
+#### Setup  
+
+for MacOS Catalina 10.15.7
+- Python 3.7.3
+- Chromedriver added to $PATH
+- Installed modules: selenium, python-dateutil
+- Chrome (didn't try running tests on other browsers, there might be some differences)
+
 #### Tests location
 
 Tests are located in ```/tests``` and split in classes:  
@@ -8,9 +16,12 @@ Tests are located in ```/tests``` and split in classes:
 Separation is done based on tested object and setup/teardown steps that tests in each class require.  
 
 Test scenarios that are not automated (due to lack of time), but should also be tested:  
-- registration page design (list of elements, text)
+- registration page design (list of elements, text, localization)
 - more input fields validation tests (e.g. email does't contain domain name or account name, data too short or too long, includes unsupported symbols)
 - dropdown validation tests (can't select date that doesn't exist, like 30.02)
+- validation if account already exists
+- redirect to EULA links
+- check pop-up for email field
 
 #### Tests execution
 
